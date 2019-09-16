@@ -1,4 +1,4 @@
-FROM golang:1.12-alpine
+FROM golang:1.13-alpine
 
 ENV LZ4_VERSION=1.9.1 \
     LIBRDKAFKA_VERSION=1.1.0
