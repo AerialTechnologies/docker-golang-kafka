@@ -1,7 +1,7 @@
-FROM golang:1.13-stretch
+FROM golang:1.15-stretch
 
 ENV LZ4_VERSION=1.9.1 \
-    LIBRDKAFKA_VERSION=1.1.0
+    LIBRDKAFKA_VERSION=1.5.0
 
 RUN apt-get update && apt-get dist-upgrade -y && \
     apt-get install -y bash zlib1g-dev libffi-dev build-essential make git ssh && \
