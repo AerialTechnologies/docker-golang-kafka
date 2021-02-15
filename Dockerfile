@@ -1,7 +1,7 @@
-FROM golang:1.13-alpine
+FROM golang:1.15-alpine
 
 ENV LZ4_VERSION=1.9.1 \
-    LIBRDKAFKA_VERSION=1.1.0
+    LIBRDKAFKA_VERSION=1.5.0
 
 RUN apk update && apk upgrade && \
     apk add curl bash build-base zlib-dev openssl-dev musl-dev make gcc g++ git && \
